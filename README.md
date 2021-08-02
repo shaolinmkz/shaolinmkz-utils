@@ -21,32 +21,32 @@ yarn add shaolinmkz-utils
 import { cleanUpDuplicateAsync } from "shaolinmkz-utils";
 
 const dirtyData = [
-"   Chukwuemeka Obiora Musa    ",
-"Nwabuzor    Obiora     Chukwuemeka",
-"   Chukwuemeka Obiora Nwabuzor    ",
-"   Chukwuemeka Obiora Musa    ",
-"    Nwabuzor Chukwuemeka Obiora     ",
-"Chukwuemeka null Nwabuzor",
-"undefined Chukwuemeka UNDEFINED Nwabuzor",
-"Nwabuzor    Chukwuemeka Obiora",
-"Chukwuemeka undefined Obiora Nwabuzor",
-"   Chukwuemeka James Nwabuzor   ",
+  "   Chukwuemeka Obiora Musa    ",
+  "Nwabuzor    Obiora     Chukwuemeka",
+  "   Chukwuemeka Obiora Nwabuzor    ",
+  "   Chukwuemeka Obiora Musa    ",
+  "    Nwabuzor Chukwuemeka Obiora     ",
+  "Chukwuemeka null Nwabuzor",
+  "undefined Chukwuemeka UNDEFINED Nwabuzor",
+  "Nwabuzor    Chukwuemeka Obiora",
+  "Chukwuemeka undefined Obiora Nwabuzor",
+  "   Chukwuemeka James Nwabuzor   ",
 ];
 
 const result1 = await cleanUpDuplicateAsync(dirtyData);
-console.log(result);
-// [
-//   'Chukwuemeka Obiora Musa',
-//   'Nwabuzor Obiora Chukwuemeka',
-//   'Chukwuemeka James Nwabuzor'
-// ]
+  console.log(result);
+  // [
+  //   'Chukwuemeka Obiora Musa',
+  //   'Nwabuzor Obiora Chukwuemeka',
+  //   'Chukwuemeka James Nwabuzor'
+  // ]
 
 try {
-const result2: any = await cleanUpDuplicateAsync([undefined]);
+  const result2: any = await cleanUpDuplicateAsync([undefined]);
 } catch (error) {
-console.log(error);
-//   {
-//     message: "The function argument must be an array of strings"
-//   }
+  console.log(error);
+  //   {
+  //     message: "The function argument must be an array of strings"
+  //   }
 }
 ```
