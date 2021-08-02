@@ -7,8 +7,7 @@ export const cleanUpDuplicateAsync = (data: string[]) => {
        * Removes null values
        * Reduces spaces greater than 1 to 1-space
        */
-      //  @ts-ignore
-      const cleanStage1 = [...new Set(data)].map((name) => `${name}`
+      const cleanStage1 = Array.from(new Set(data)).map((name) => `${name}`
         .replace(/undefined/gim, '')
         .replace(/null/gim, '')
         .replace(/\s\s+/gim, ' ')

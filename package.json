@@ -1,24 +1,26 @@
 {
   "name": "shaolinmkz-utils",
   "version": "1.0.3",
-  "description": "Utils",
+  "description": "Personal utils",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
     "test": "jest --coverage",
     "build": "rm -rf lib && tsc -p ."
   },
-  "keywords": ["Utils"],
+  "keywords": [
+    "Utils"
+  ],
   "author": "Nwabuzor, Chukwuemeka Obiora",
   "license": "ISC",
   "devDependencies": {
-    "jest": "25.5.4",
-    "typescript": "3.8.3",
     "@babel/core": "7.9.6",
     "@babel/preset-env": "7.9.6",
     "@babel/preset-typescript": "7.9.0",
+    "@types/jest": "25.2.1",
     "babel-jest": "25.5.1",
-    "@types/jest": "25.2.1"
+    "jest": "25.5.4",
+    "typescript": "3.8.3"
   },
   "files": [
     "lib"
