@@ -42,7 +42,7 @@ const result1 = await cleanUpDuplicateAsync(dirtyData);
   // ]
 
 try {
-  const result2: any = await cleanUpDuplicateAsync([undefined]);
+  await cleanUpDuplicateAsync([undefined]);
 } catch (error) {
   console.log(error);
   //   {
