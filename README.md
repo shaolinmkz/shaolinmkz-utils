@@ -36,9 +36,9 @@ const dirtyData = [
 const result1 = await cleanUpDuplicateAsync(dirtyData);
   console.log(result);
   // [
-  //   'Chukwuemeka Obiora Musa',
-  //   'Nwabuzor Obiora Chukwuemeka',
-  //   'Chukwuemeka James Nwabuzor'
+  //  'Nwabuzor Obiora Chukwuemeka',
+  //  'Chukwuemeka James Nwabuzor',
+  //  'Chukwuemeka Obiora Musa'
   // ]
 
 try {
