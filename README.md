@@ -14,6 +14,12 @@ npm install shaolinmkz-utils
 ```sh
 yarn add shaolinmkz-utils
 ```
+#### OR
+
+```html
+<!-- Place script tag in root (CDN) -->
+<script defer src="https://bundle.run/shaolinmkz-utils@1.0.1"></script>
+```
 
 # Usage
 
@@ -49,4 +55,19 @@ try {
   //     message: "The function argument must be an array of strings"
   //   }
 }
+```
+
+# CDN USAGE
+
+```js
+window
+.shaolinmkzUtils
+.cleanUpDuplicateAsync(dirtyData).then((result) => {
+	console.log(result);
+	  // [
+  //  'Nwabuzor Obiora Chukwuemeka',
+  //  'Chukwuemeka James Nwabuzor',
+  //  'Chukwuemeka Obiora Musa'
+  // ]
+});
 ```
