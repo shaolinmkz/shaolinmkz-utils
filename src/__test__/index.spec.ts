@@ -15,18 +15,18 @@ const dirtyData = [
 
 describe('cleanUpDuplicateAsync', () => {
     it('should clean the array of strings and returns an array of 3 strings', async () => {
-        const result: any = await cleanUpDuplicateAsync(dirtyData);
-
+        const result = await cleanUpDuplicateAsync(dirtyData);
+       
         expect(result).toEqual([
-            'Chukwuemeka Obiora Musa',
             'Nwabuzor Obiora Chukwuemeka',
-            'Chukwuemeka James Nwabuzor'
+            'Chukwuemeka James Nwabuzor',
+            'Chukwuemeka Obiora Musa'
         ]);
     });
 
     it('should clean the array of strings and returns an array with 1 string', async () => {
-        const result: any = await cleanUpDuplicateAsync([
-            ' Chukwuemeka Obiora Nwabuzor',
+        const result = await cleanUpDuplicateAsync([
+            'Chukwuemeka Obiora Nwabuzor',
             'Nwabuzor Obiora Chukwuemeka',
         ]);
 

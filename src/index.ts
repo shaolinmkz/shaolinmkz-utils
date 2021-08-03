@@ -12,7 +12,7 @@ export const cleanUpDuplicateAsync = (data: string[]) => {
         .replace(/null/gim, '')
         .replace(/\s\s+/gim, ' ')
         .trim()
-      );
+      ).sort((a, b) => a.length > b.length ? -1 : 1);
 
       let previousFilteredResult = 0;
       const filteredResult = new Set();
