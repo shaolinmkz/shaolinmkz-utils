@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/shaolinmkz/shaolinmkz-utils.svg?style=svg&circle-token=516f01628d30c969eebbe350373bed767e621e1f)](https://circleci.com/gh/shaolinmkz/shaolinmkz-utils) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![NPM](https://img.shields.io/npm/v/shaolinmkz-utils.svg)](https://www.npmjs.com/package/shaolinmkz-utils) [![Total Download](https://img.shields.io/npm/dt/shaolinmkz-utils.svg)](https://www.npmjs.com/package/shaolinmkz-utils)
 
-Util functions for multiple uses.
+Util functions for multiple use cases.
 
 # Installation
 
